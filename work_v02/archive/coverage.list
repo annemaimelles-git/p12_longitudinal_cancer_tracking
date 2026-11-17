@@ -1,0 +1,31 @@
+    patient  BL length  FU length   overlap  shared
+ 0f49c89d1e      455mm      843mm     455mm   100%  <- had big errors
+ 1534b76d32      850mm      744mm     744mm   100%
+ 2618045a3a      768mm      762mm     748mm    98%
+ 2ba100d604      822mm      849mm     816mm    99%  <- had big errors
+ 38b18881fc      420mm      385mm     311mm    81%
+ 38db3aed92      720mm      927mm     720mm   100%
+ 39059724f7      468mm      438mm     435mm    99%
+ 3988c7f88e      636mm      882mm     585mm    92%  <- had big errors
+ 3994f23bfb      780mm      738mm     738mm   100%
+ 48aedb8880      450mm      843mm     450mm   100%
+ 577ef1154f      429mm      459mm     429mm   100%
+ 5c7d5705ab      848mm      848mm     841mm    99%
+ 64b2c11867     1102mm      780mm     780mm   100%
+ 6883966fd8     1103mm     1100mm    1067mm    97%
+ 7ef605fc8d      510mm      445mm     445mm   100%
+ 7f6ffaa6bb      801mm      828mm     801mm   100%
+ 84150c44ef      768mm      279mm     279mm   100%
+ 85d8ce590a      381mm      423mm     381mm   100%
+ 9872ed9fc2      885mm      864mm     864mm   100%
+ bd4c9ab730      861mm      846mm     846mm   100%
+ be83ab3ecd      864mm      810mm     810mm   100%
+ c4258e0f53     1728mm      768mm     768mm   100%
+ c45147dee7      445mm      765mm     445mm   100%
+ cf2e4f52be      843mm      846mm     828mm    98%
+ cfa0860e83      639mm      795mm     639mm   100%
+ e2c0be2456      783mm      831mm     783mm   100%  <- had big errors
+ ebf11048b1      300mm      282mm     269mm    95%
+ eda80a3d5b     1100mm     1100mm    1077mm    98%
+ f2fc990265     1729mm     1855mm    1726mm   100%
+ f718499c1c     1728mm     1548mm    1474mm    95%

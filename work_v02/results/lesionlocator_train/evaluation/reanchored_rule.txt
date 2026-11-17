@@ -1,0 +1,20 @@
+366 training lesions in patients with at least 3 predictions
+
+=== bad = LesionLocator error > 20 mm: 77 of 366 ===
+  deviation from the patient's median displacement:  good    9.75   bad   28.65
+  (old signal, distance to cog_propagated:           good    5.39   bad   40.38)
+    deviation >  20 mm: catches 68.8% of the bad, rejects 15.6% of the good
+    deviation >  30 mm: catches 49.4% of the bad, rejects  5.2% of the good
+    deviation >  50 mm: catches 33.8% of the bad, rejects  1.4% of the good
+    deviation >  75 mm: catches 22.1% of the bad, rejects  0.0% of the good
+    deviation > 100 mm: catches 20.8% of the bad, rejects  0.0% of the good
+
+=== bad = LesionLocator error > 50 mm: 29 of 366 ===
+  deviation from the patient's median displacement:  good   11.18   bad  102.12
+  (old signal, distance to cog_propagated:           good    7.14   bad  108.30)
+    deviation >  20 mm: catches 89.7% of the bad, rejects 21.4% of the good
+    deviation >  30 mm: catches 89.7% of the bad, rejects  8.0% of the good
+    deviation >  50 mm: catches 82.8% of the bad, rejects  1.8% of the good
+    deviation >  75 mm: catches 55.2% of the bad, rejects  0.3% of the good
+    deviation > 100 mm: catches 55.2% of the bad, rejects  0.0% of the good
+

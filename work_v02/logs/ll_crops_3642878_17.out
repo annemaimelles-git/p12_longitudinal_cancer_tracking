@@ -1,0 +1,19 @@
+Task 17: c4258e0f53_lesion7, started Wed Nov 11 21:49:16 EET 2026
+
+#######################################################################
+Please cite the following paper when using LesionLocator:
+Rokuss, M., Kirchhoff, Y., Akbal, S., Kovacs, B., Roy, S., Ulrich, C., ... & Maier-Hein, K. (2025).
+LesionLocator: Zero-Shot Universal Tumor Segmentation and Tracking in 3D Whole-Body Imaging. CVPR.
+#######################################################################
+
+Tracking lesions (this may be time consuming for large images)...
+Loading fold 0
+Loading fold 1
+Loading fold 2
+Loading fold 3
+Loading fold 4
+
+ === Predicting c4258e0f53_FU_img_00.nii.gz === 
+Predicting Lesions with indices: [7]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:15<00:00, 15.71s/it]100%|██████████| 1/1 [00:15<00:00, 15.71s/it]
+Finished c4258e0f53_lesion7 at Wed Nov 11 21:49:50 EET 2026

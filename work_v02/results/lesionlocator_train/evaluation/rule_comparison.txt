@@ -1,0 +1,17 @@
+351 lesions (identical set for both signals); 28 with an error > 50 mm
+these come from 16 different patients
+  most affected patients: [('58a2fc6ed3', 6), ('9b8619251a', 4), ('caf1a3dfb5', 3)]
+
+         consensus deviation: AUC = 0.954
+  distance to cog_propagated: AUC = 0.944
+
+(AUC 1.0 = perfect separation, 0.5 = no better than chance)
+
+ threshold               consensus deviation        distance to cog_propagated
+                     caught         rejected           caught         rejected
+      20 mm           92.9%            20.4%           92.9%            19.5%
+      30 mm           92.9%             7.4%           92.9%            12.1%
+      50 mm           85.7%             1.5%           89.3%             8.4%
+      75 mm           57.1%             0.3%           64.3%             8.0%
+     100 mm           57.1%             0.0%           53.6%             7.4%
+     150 mm           32.1%             0.0%           32.1%             0.0%

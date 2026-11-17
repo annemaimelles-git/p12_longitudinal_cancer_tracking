@@ -1,0 +1,10 @@
+metric,initial estimate,LesionLocator
+lesions,124.0,124.0
+mean,14.45,20.74
+median,5.99,2.2
+MEDx,1.37,0.96
+MEDy,2.14,0.65
+MEDz,3.06,1.64
+CPM@5,45.97,68.55
+CPM@10,56.45,72.58
+CPM@20,70.97,81.45

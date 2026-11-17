@@ -1,0 +1,8 @@
+2098 training lesions; |initial estimate - truth| per axis (mm):
+  50th percentile:  x    1.3   y    1.4   z    2.5
+  90th percentile:  x   10.2   y   10.2   z   16.4
+  95th percentile:  x   16.6   y   15.4   z   27.4
+  99th percentile:  x   42.7   y   33.7   z  106.9
+  maximum:          x  133.7   y   95.5   z  208.7
+
+Suggested crop half-size: 99th percentile (107 mm) + 30 mm margin, rounded up = 140 mm  (box = twice that per axis)

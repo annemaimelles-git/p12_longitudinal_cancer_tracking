@@ -1,0 +1,112 @@
+Task 11: e2c0be2456_lesion14, started Wed Nov 11 21:33:40 EET 2026
+
+#######################################################################
+Please cite the following paper when using LesionLocator:
+Rokuss, M., Kirchhoff, Y., Akbal, S., Kovacs, B., Roy, S., Ulrich, C., ... & Maier-Hein, K. (2025).
+LesionLocator: Zero-Shot Universal Tumor Segmentation and Tracking in 3D Whole-Body Imaging. CVPR.
+#######################################################################
+
+Tracking lesions (this may be time consuming for large images)...
+Loading fold 0
+Loading fold 1
+Loading fold 2
+Loading fold 3
+Loading fold 4
+
+ === Predicting e2c0be2456_FU_img_00.nii.gz === 
+Predicting Lesions with indices: [14]
+  0%|          | 0/1 [00:00<?, ?it/s]  0%|          | 0/1 [00:01<?, ?it/s]
+Traceback (most recent call last):
+  File "/gpfs/helios/home/melles/.conda/envs/lesionlocator/bin/LesionLocator_track", line 6, in <module>
+    sys.exit(segment_and_track())
+             ^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/helios/home/melles/ML_project/work_v02/LesionLocator/lesionlocator/inference/lesionlocator_segment_and_track.py", line 296, in segment_and_track
+    predictor.track(baseline_image=args.bl, follow_up_images=args.fu, output_folder=args.o, prompt=prompt)
+  File "/gpfs/helios/home/melles/ML_project/work_v02/LesionLocator/lesionlocator/inference/lesionlocator_segment_and_track.py", line 200, in track
+    filename = self.track_single_lesion(lesion_index, bl, fu, bl_path, fu_path, output_folder, prompts, properties, preprocessor)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/helios/home/melles/ML_project/work_v02/LesionLocator/lesionlocator/inference/lesionlocator_segment_and_track.py", line 125, in track_single_lesion
+    prediction = self.mirror_and_predict(bl, fu, prompt).to('cpu')
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/helios/home/melles/ML_project/work_v02/LesionLocator/lesionlocator/inference/lesionlocator_segment_and_track.py", line 81, in mirror_and_predict
+    prediction = self.network(x0, x1, prompt, is_inference=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/helios/home/melles/.conda/envs/lesionlocator/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1787, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/helios/home/melles/.conda/envs/lesionlocator/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1798, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/helios/home/melles/ML_project/work_v02/LesionLocator/lesionlocator/modules/tracknet.py", line 220, in forward
+    output = self.unet(bb_input)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/helios/home/melles/.conda/envs/lesionlocator/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1787, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/helios/home/melles/.conda/envs/lesionlocator/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1798, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/helios/home/melles/.conda/envs/lesionlocator/lib/python3.12/site-packages/dynamic_network_architectures/architectures/unet.py", line 117, in forward
+    skips = self.encoder(x)
+            ^^^^^^^^^^^^^^^
+  File "/gpfs/helios/home/melles/.conda/envs/lesionlocator/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1787, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/helios/home/melles/.conda/envs/lesionlocator/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1798, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/helios/home/melles/.conda/envs/lesionlocator/lib/python3.12/site-packages/dynamic_network_architectures/building_blocks/residual_encoders.py", line 137, in forward
+    x = self.stem(x)
+        ^^^^^^^^^^^^
+  File "/gpfs/helios/home/melles/.conda/envs/lesionlocator/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1787, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/helios/home/melles/.conda/envs/lesionlocator/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1798, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/helios/home/melles/.conda/envs/lesionlocator/lib/python3.12/site-packages/dynamic_network_architectures/building_blocks/simple_conv_blocks.py", line 137, in forward
+    return self.convs(x)
+           ^^^^^^^^^^^^^
+  File "/gpfs/helios/home/melles/.conda/envs/lesionlocator/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1787, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/helios/home/melles/.conda/envs/lesionlocator/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1798, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/helios/home/melles/.conda/envs/lesionlocator/lib/python3.12/site-packages/torch/nn/modules/container.py", line 259, in forward
+    input = module(input)
+            ^^^^^^^^^^^^^
+  File "/gpfs/helios/home/melles/.conda/envs/lesionlocator/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1787, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/helios/home/melles/.conda/envs/lesionlocator/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1798, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/helios/home/melles/.conda/envs/lesionlocator/lib/python3.12/site-packages/dynamic_network_architectures/building_blocks/simple_conv_blocks.py", line 71, in forward
+    return self.all_modules(x)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/helios/home/melles/.conda/envs/lesionlocator/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1787, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/helios/home/melles/.conda/envs/lesionlocator/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1798, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/helios/home/melles/.conda/envs/lesionlocator/lib/python3.12/site-packages/torch/nn/modules/container.py", line 259, in forward
+    input = module(input)
+            ^^^^^^^^^^^^^
+  File "/gpfs/helios/home/melles/.conda/envs/lesionlocator/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1787, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/helios/home/melles/.conda/envs/lesionlocator/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1798, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/helios/home/melles/.conda/envs/lesionlocator/lib/python3.12/site-packages/torch/nn/modules/instancenorm.py", line 133, in forward
+    return self._apply_instance_norm(input)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/helios/home/melles/.conda/envs/lesionlocator/lib/python3.12/site-packages/torch/nn/modules/instancenorm.py", line 55, in _apply_instance_norm
+    return F.instance_norm(
+           ^^^^^^^^^^^^^^^^
+  File "/gpfs/helios/home/melles/.conda/envs/lesionlocator/lib/python3.12/site-packages/torch/nn/functional.py", line 2959, in instance_norm
+    return torch.instance_norm(
+           ^^^^^^^^^^^^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 19.84 GiB. GPU 0 has a total capacity of 39.52 GiB of which 14.83 GiB is free. Including non-PyTorch memory, this process has 24.68 GiB memory in use. Of the allocated memory 23.91 GiB is allocated by PyTorch, and 288.11 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)

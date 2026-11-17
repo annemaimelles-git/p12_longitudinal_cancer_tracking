@@ -1,0 +1,39 @@
+Task 6: patient 13fe9d8431, started Wed Nov 11 23:07:43 EET 2026 on pegasus
+Scan pairs (baseline:follow-up): 00:00 01:00
+--- baseline img_00 -> follow-up img_00
+
+#######################################################################
+Please cite the following paper when using LesionLocator:
+Rokuss, M., Kirchhoff, Y., Akbal, S., Kovacs, B., Roy, S., Ulrich, C., ... & Maier-Hein, K. (2025).
+LesionLocator: Zero-Shot Universal Tumor Segmentation and Tracking in 3D Whole-Body Imaging. CVPR.
+#######################################################################
+
+Tracking lesions (this may be time consuming for large images)...
+Loading fold 0
+Loading fold 1
+Loading fold 2
+Loading fold 3
+Loading fold 4
+
+ === Predicting 13fe9d8431_FU_img_00.nii.gz === 
+Predicting Lesions with indices: [1 2 5 7 8 9]
+  0%|          | 0/6 [00:00<?, ?it/s] 17%|█▋        | 1/6 [00:21<01:45, 21.10s/it] 33%|███▎      | 2/6 [00:41<01:23, 20.95s/it] 50%|█████     | 3/6 [01:02<01:02, 20.70s/it] 67%|██████▋   | 4/6 [01:22<00:41, 20.66s/it] 83%|████████▎ | 5/6 [01:43<00:20, 20.67s/it]100%|██████████| 6/6 [02:04<00:00, 20.65s/it]100%|██████████| 6/6 [02:04<00:00, 20.71s/it]
+--- baseline img_01 -> follow-up img_00
+
+#######################################################################
+Please cite the following paper when using LesionLocator:
+Rokuss, M., Kirchhoff, Y., Akbal, S., Kovacs, B., Roy, S., Ulrich, C., ... & Maier-Hein, K. (2025).
+LesionLocator: Zero-Shot Universal Tumor Segmentation and Tracking in 3D Whole-Body Imaging. CVPR.
+#######################################################################
+
+Tracking lesions (this may be time consuming for large images)...
+Loading fold 0
+Loading fold 1
+Loading fold 2
+Loading fold 3
+Loading fold 4
+
+ === Predicting 13fe9d8431_FU_img_00.nii.gz === 
+Predicting Lesions with indices: [ 3  4  6 10]
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:21<01:03, 21.07s/it] 50%|█████     | 2/4 [00:41<00:41, 20.77s/it] 75%|███████▌  | 3/4 [01:02<00:20, 20.75s/it]100%|██████████| 4/4 [01:23<00:00, 20.73s/it]100%|██████████| 4/4 [01:23<00:00, 20.76s/it]
+Finished 13fe9d8431 at Wed Nov 11 23:12:16 EET 2026

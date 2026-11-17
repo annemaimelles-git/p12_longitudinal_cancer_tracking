@@ -1,0 +1,19 @@
+Starting at Wed Nov 11 21:18:58 EET 2026 on pegasus
+
+#######################################################################
+Please cite the following paper when using LesionLocator:
+Rokuss, M., Kirchhoff, Y., Akbal, S., Kovacs, B., Roy, S., Ulrich, C., ... & Maier-Hein, K. (2025).
+LesionLocator: Zero-Shot Universal Tumor Segmentation and Tracking in 3D Whole-Body Imaging. CVPR.
+#######################################################################
+
+Tracking lesions (this may be time consuming for large images)...
+Loading fold 0
+Loading fold 1
+Loading fold 2
+Loading fold 3
+Loading fold 4
+
+ === Predicting 2ba100d604_FU_img_00.nii.gz === 
+Predicting Lesions with indices: [14]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:15<00:00, 15.16s/it]100%|██████████| 1/1 [00:15<00:00, 15.16s/it]
+Finished at Wed Nov 11 21:19:41 EET 2026

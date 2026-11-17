@@ -1,0 +1,33 @@
+Patients evaluated: 30
+Baseline lesions: 338; with a true follow-up centre: 194; LesionLocator produced a non-empty mask for 124 of them.
+
+1) All lesions with a true follow-up centre (mm; CPM = % of lesions):
+   'LL + fallback' uses the initial estimate where LesionLocator's mask is empty.
+            initial estimate     LL + fallback
+lesions                  194               194
+mean                   16.94             20.96
+median                 10.29              3.95
+MEDx                    2.09              1.43
+MEDy                    2.72              1.24
+MEDz                    4.39              2.20
+CPM@5                  38.14             52.58
+CPM@10                 49.48             59.79
+CPM@20                 68.04             74.74
+
+2) Only lesions where LesionLocator produced a mask (same lesions for both columns):
+            initial estimate     LesionLocator
+lesions                  124               124
+mean                   14.45             20.74
+median                  5.99              2.20
+MEDx                    1.37              0.96
+MEDy                    2.14              0.65
+MEDz                    3.06              1.64
+CPM@5                  45.97             68.55
+CPM@10                 56.45             72.58
+CPM@20                 70.97             81.45
+
+3) Lesions without a follow-up centre (e.g. DISAPPEARING): 111; LesionLocator's mask was empty (= correctly 'gone') for 88 of them.
+
+Reference from the old pipeline, same 30 validation patients (initial estimate):
+  194 lesions, median 10.29, MEDx 2.09, MEDy 2.72, MEDz 4.39, CPM@5 38.14, CPM@10 49.48, CPM@20 68.04
+  -> once all 30 patients are done, table 1's 'initial estimate' column should match this.

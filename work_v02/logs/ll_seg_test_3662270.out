@@ -1,0 +1,165 @@
+Starting at Sat Nov 14 12:25:59 EET 2026 on falcon4
+
+#######################################################################
+Please cite the following paper when using LesionLocator:
+Rokuss, M., Kirchhoff, Y., Akbal, S., Kovacs, B., Roy, S., Ulrich, C., ... & Maier-Hein, K. (2025).
+LesionLocator: Zero-Shot Universal Tumor Segmentation and Tracking in 3D Whole-Body Imaging. CVPR.
+#######################################################################
+
+Loading segmentation model.
+/gpfs/helios/home/melles/.conda/envs/lesionlocator/lib/python3.12/site-packages/torch/cuda/__init__.py:497: UserWarning: Found GPU0 Tesla V100-SXM2-32GB which is of compute capability (CC) 7.0.
+The following list shows the CCs this version of PyTorch was built for and the hardware CCs it supports:
+- 7.5 which supports hardware CC >=7.5,<8.0
+- 8.0 which supports hardware CC >=8.0,<9.0
+- 8.6 which supports hardware CC >=8.6,<9.0
+- 9.0 which supports hardware CC >=9.0,<10.0
+- 10.0 which supports hardware CC >=10.0,<11.0 except {10.1}
+- 12.0 which supports hardware CC >=12.0,<13.0
+Your installed torch==2.15.0+cu132 does not include kernels for this GPU. Reinstall the same version against a CUDA build that does, e.g.:
+  For CUDA 12.6 use pip install torch==2.15.0 --index-url https://download.pytorch.org/whl/cu126
+  _warn_unsupported_code(d, device_cc, code_ccs)
+Exception in thread Thread-4 (producer):
+Traceback (most recent call last):
+  File "/gpfs/helios/home/melles/.conda/envs/lesionlocator/lib/python3.12/threading.py", line 1075, in _bootstrap_inner
+    self.run()
+  File "/gpfs/helios/home/melles/.conda/envs/lesionlocator/lib/python3.12/threading.py", line 1012, in run
+    self._target(*self._args, **self._kwargs)
+  File "/gpfs/helios/home/melles/ML_project/work_v02/LesionLocator/lesionlocator/inference/lesionlocator_segment.py", line 406, in producer
+    q.put((torch.clone(d[tuple(s)][None], memory_format=torch.contiguous_format).to(self.device), s))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.AcceleratorError: CUDA error: no kernel image is available for execution on the device
+Search for `cudaErrorNoKernelImageForDevice' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+
+
+ === Predicting 1534b76d32_FU_img_00 === 
+
+ Lesion ID 3: 
+Prediction on device was unsuccessful, probably due to a lack of memory. Moving results arrays to CPU
+Traceback (most recent call last):
+  File "/gpfs/helios/home/melles/ML_project/work_v02/LesionLocator/lesionlocator/inference/lesionlocator_segment.py", line 503, in predict_sliding_window_return_logits
+    predicted_logits = self._internal_predict_sliding_window_return_logits(data, slicers,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/helios/home/melles/.conda/envs/lesionlocator/lib/python3.12/site-packages/torch/utils/_contextlib.py", line 158, in inference_mode
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/helios/home/melles/ML_project/work_v02/LesionLocator/lesionlocator/inference/lesionlocator_segment.py", line 466, in _internal_predict_sliding_window_return_logits
+    raise e
+  File "/gpfs/helios/home/melles/ML_project/work_v02/LesionLocator/lesionlocator/inference/lesionlocator_segment.py", line 429, in _internal_predict_sliding_window_return_logits
+    gaussian = compute_gaussian(tuple(self.configuration_manager.patch_size), sigma_scale=1. / 8,
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/helios/home/melles/ML_project/work_v02/LesionLocator/lesionlocator/inference/sliding_window_prediction.py", line 25, in compute_gaussian
+    mask = gaussian_importance_map == 0
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.AcceleratorError: CUDA error: no kernel image is available for execution on the device
+Search for `cudaErrorNoKernelImageForDevice' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/gpfs/helios/home/melles/.conda/envs/lesionlocator/bin/LesionLocator_segment", line 6, in <module>
+    sys.exit(predict_seg_from_prompt())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/helios/home/melles/ML_project/work_v02/LesionLocator/lesionlocator/inference/lesionlocator_segment.py", line 613, in predict_seg_from_prompt
+    predictor.predict_from_files(args.i, args.o, args.p, args.t,
+  File "/gpfs/helios/home/melles/ML_project/work_v02/LesionLocator/lesionlocator/inference/lesionlocator_segment.py", line 199, in predict_from_files
+    return self.predict_from_data_iterator(data_iterator, prompt_type, num_processes_segmentation_export)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/helios/home/melles/ML_project/work_v02/LesionLocator/lesionlocator/inference/lesionlocator_segment.py", line 246, in predict_from_data_iterator
+    prediction = self.predict_logits_from_preprocessed_data(data, p).cpu()
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/helios/home/melles/.conda/envs/lesionlocator/lib/python3.12/site-packages/torch/utils/_contextlib.py", line 158, in inference_mode
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/helios/home/melles/ML_project/work_v02/LesionLocator/lesionlocator/inference/lesionlocator_segment.py", line 310, in predict_logits_from_preprocessed_data
+    prediction = self.predict_sliding_window_return_logits(data, dense_prompt).to('cpu')
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/helios/home/melles/.conda/envs/lesionlocator/lib/python3.12/site-packages/torch/utils/_contextlib.py", line 158, in inference_mode
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/helios/home/melles/ML_project/work_v02/LesionLocator/lesionlocator/inference/lesionlocator_segment.py", line 509, in predict_sliding_window_return_logits
+    predicted_logits = self._internal_predict_sliding_window_return_logits(data, slicers, False)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/helios/home/melles/.conda/envs/lesionlocator/lib/python3.12/site-packages/torch/utils/_contextlib.py", line 158, in inference_mode
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/helios/home/melles/ML_project/work_v02/LesionLocator/lesionlocator/inference/lesionlocator_segment.py", line 466, in _internal_predict_sliding_window_return_logits
+    raise e
+  File "/gpfs/helios/home/melles/ML_project/work_v02/LesionLocator/lesionlocator/inference/lesionlocator_segment.py", line 445, in _internal_predict_sliding_window_return_logits
+    prediction = self._internal_maybe_mirror_and_predict(workon)[0].to(results_device)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/helios/home/melles/.conda/envs/lesionlocator/lib/python3.12/site-packages/torch/utils/_contextlib.py", line 158, in inference_mode
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/helios/home/melles/ML_project/work_v02/LesionLocator/lesionlocator/inference/lesionlocator_segment.py", line 379, in _internal_maybe_mirror_and_predict
+    prediction = self.network(x)
+                 ^^^^^^^^^^^^^^^
+  File "/gpfs/helios/home/melles/.conda/envs/lesionlocator/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1787, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/helios/home/melles/.conda/envs/lesionlocator/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1798, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/helios/home/melles/.conda/envs/lesionlocator/lib/python3.12/site-packages/dynamic_network_architectures/architectures/unet.py", line 117, in forward
+    skips = self.encoder(x)
+            ^^^^^^^^^^^^^^^
+  File "/gpfs/helios/home/melles/.conda/envs/lesionlocator/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1787, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/helios/home/melles/.conda/envs/lesionlocator/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1798, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/helios/home/melles/.conda/envs/lesionlocator/lib/python3.12/site-packages/dynamic_network_architectures/building_blocks/residual_encoders.py", line 137, in forward
+    x = self.stem(x)
+        ^^^^^^^^^^^^
+  File "/gpfs/helios/home/melles/.conda/envs/lesionlocator/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1787, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/helios/home/melles/.conda/envs/lesionlocator/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1798, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/helios/home/melles/.conda/envs/lesionlocator/lib/python3.12/site-packages/dynamic_network_architectures/building_blocks/simple_conv_blocks.py", line 137, in forward
+    return self.convs(x)
+           ^^^^^^^^^^^^^
+  File "/gpfs/helios/home/melles/.conda/envs/lesionlocator/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1787, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/helios/home/melles/.conda/envs/lesionlocator/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1798, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/helios/home/melles/.conda/envs/lesionlocator/lib/python3.12/site-packages/torch/nn/modules/container.py", line 259, in forward
+    input = module(input)
+            ^^^^^^^^^^^^^
+  File "/gpfs/helios/home/melles/.conda/envs/lesionlocator/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1787, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/helios/home/melles/.conda/envs/lesionlocator/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1798, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/helios/home/melles/.conda/envs/lesionlocator/lib/python3.12/site-packages/dynamic_network_architectures/building_blocks/simple_conv_blocks.py", line 71, in forward
+    return self.all_modules(x)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/helios/home/melles/.conda/envs/lesionlocator/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1787, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/helios/home/melles/.conda/envs/lesionlocator/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1798, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/helios/home/melles/.conda/envs/lesionlocator/lib/python3.12/site-packages/torch/nn/modules/container.py", line 259, in forward
+    input = module(input)
+            ^^^^^^^^^^^^^
+  File "/gpfs/helios/home/melles/.conda/envs/lesionlocator/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1787, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/helios/home/melles/.conda/envs/lesionlocator/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1798, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/helios/home/melles/.conda/envs/lesionlocator/lib/python3.12/site-packages/torch/nn/modules/conv.py", line 735, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs/helios/home/melles/.conda/envs/lesionlocator/lib/python3.12/site-packages/torch/nn/modules/conv.py", line 730, in _conv_forward
+    return F.conv3d(
+           ^^^^^^^^^
+torch.AcceleratorError: CUDA error: no kernel image is available for execution on the device
+Search for `cudaErrorNoKernelImageForDevice' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+

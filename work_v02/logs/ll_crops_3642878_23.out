@@ -1,0 +1,19 @@
+Task 23: e2c0be2456_lesion35, started Wed Nov 11 21:51:17 EET 2026
+
+#######################################################################
+Please cite the following paper when using LesionLocator:
+Rokuss, M., Kirchhoff, Y., Akbal, S., Kovacs, B., Roy, S., Ulrich, C., ... & Maier-Hein, K. (2025).
+LesionLocator: Zero-Shot Universal Tumor Segmentation and Tracking in 3D Whole-Body Imaging. CVPR.
+#######################################################################
+
+Tracking lesions (this may be time consuming for large images)...
+Loading fold 0
+Loading fold 1
+Loading fold 2
+Loading fold 3
+Loading fold 4
+
+ === Predicting e2c0be2456_FU_img_00.nii.gz === 
+Predicting Lesions with indices: [35]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:14<00:00, 14.90s/it]100%|██████████| 1/1 [00:14<00:00, 14.90s/it]
+Finished e2c0be2456_lesion35 at Wed Nov 11 21:51:48 EET 2026

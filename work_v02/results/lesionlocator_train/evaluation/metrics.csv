@@ -1,0 +1,10 @@
+metric,initial estimate,LL + fallback
+lesions,529.0,529.0
+mean,13.82,18.99
+median,5.38,2.82
+MEDx,1.45,0.78
+MEDy,1.61,0.83
+MEDz,2.66,2.03
+CPM@5,48.39,63.71
+CPM@10,68.43,71.64
+CPM@20,85.63,82.04

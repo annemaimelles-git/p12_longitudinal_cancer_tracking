@@ -1,0 +1,28 @@
+
+=== bad = LesionLocator error > 20 mm: 78 of 382 lesions ===
+  dist_to_init_mm  median good    5.68   bad   40.38
+  distance rule:
+    >  20 mm: catches 75.6% of the bad, rejects 12.2% of the good
+    >  30 mm: catches 60.3% of the bad, rejects  6.6% of the good
+    >  50 mm: catches 44.9% of the bad, rejects  6.2% of the good
+    >  75 mm: catches 33.3% of the bad, rejects  6.2% of the good
+    > 100 mm: catches 28.2% of the bad, rejects  5.9% of the good
+    > 150 mm: catches 11.5% of the bad, rejects  0.0% of the good
+  duplicate rule (another lesion predicted within X mm):
+    <   1 mm: catches 23.1% of the bad, rejects  8.2% of the good
+    <   5 mm: catches 34.6% of the bad, rejects 12.5% of the good
+    <  10 mm: catches 41.0% of the bad, rejects 15.5% of the good
+
+=== bad = LesionLocator error > 50 mm: 30 of 382 lesions ===
+  dist_to_init_mm  median good    7.05   bad  108.30
+  distance rule:
+    >  20 mm: catches 93.3% of the bad, rejects 19.3% of the good
+    >  30 mm: catches 93.3% of the bad, rejects 11.1% of the good
+    >  50 mm: catches 90.0% of the bad, rejects  7.7% of the good
+    >  75 mm: catches 63.3% of the bad, rejects  7.4% of the good
+    > 100 mm: catches 53.3% of the bad, rejects  6.8% of the good
+    > 150 mm: catches 30.0% of the bad, rejects  0.0% of the good
+  duplicate rule (another lesion predicted within X mm):
+    <   1 mm: catches 26.7% of the bad, rejects  9.9% of the good
+    <   5 mm: catches 36.7% of the bad, rejects 15.3% of the good
+    <  10 mm: catches 40.0% of the bad, rejects 19.0% of the good

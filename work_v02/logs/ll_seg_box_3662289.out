@@ -1,0 +1,35 @@
+Starting at Sat Nov 14 12:41:15 EET 2026 on shepard2
+
+#######################################################################
+Please cite the following paper when using LesionLocator:
+Rokuss, M., Kirchhoff, Y., Akbal, S., Kovacs, B., Roy, S., Ulrich, C., ... & Maier-Hein, K. (2025).
+LesionLocator: Zero-Shot Universal Tumor Segmentation and Tracking in 3D Whole-Body Imaging. CVPR.
+#######################################################################
+
+Loading segmentation model.
+/gpfs/helios/home/melles/.conda/envs/lesionlocator/lib/python3.12/site-packages/skimage/transform/_warps.py:754: RuntimeWarning: All-NaN slice encountered
+  min_val = min_func(input_image)
+/gpfs/helios/home/melles/.conda/envs/lesionlocator/lib/python3.12/site-packages/skimage/transform/_warps.py:758: RuntimeWarning: All-NaN slice encountered
+  max_val = max_func(input_image)
+/gpfs/helios/home/melles/.conda/envs/lesionlocator/lib/python3.12/site-packages/skimage/transform/_warps.py:754: RuntimeWarning: All-NaN slice encountered
+  min_val = min_func(input_image)
+/gpfs/helios/home/melles/.conda/envs/lesionlocator/lib/python3.12/site-packages/skimage/transform/_warps.py:758: RuntimeWarning: All-NaN slice encountered
+  max_val = max_func(input_image)
+/gpfs/helios/home/melles/.conda/envs/lesionlocator/lib/python3.12/site-packages/skimage/transform/_warps.py:754: RuntimeWarning: All-NaN slice encountered
+  min_val = min_func(input_image)
+/gpfs/helios/home/melles/.conda/envs/lesionlocator/lib/python3.12/site-packages/skimage/transform/_warps.py:758: RuntimeWarning: All-NaN slice encountered
+  max_val = max_func(input_image)
+
+ === Predicting 1534b76d32_FU_img_00 === 
+
+ Lesion ID 3: 
+
+ Lesion ID 4: 
+
+ Lesion ID 5: 
+
+ Lesion ID 11: 
+
+ Lesion ID 13: 
+done with 1534b76d32_FU_img_00
+Finished at Sat Nov 14 12:42:26 EET 2026

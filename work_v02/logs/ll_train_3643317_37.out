@@ -1,0 +1,39 @@
+Task 37: patient 9dfcd5e558, started Thu Nov 12 02:08:34 EET 2026 on pegasus
+Scan pairs (baseline:follow-up): 00:00 01:00
+--- baseline img_00 -> follow-up img_00
+
+#######################################################################
+Please cite the following paper when using LesionLocator:
+Rokuss, M., Kirchhoff, Y., Akbal, S., Kovacs, B., Roy, S., Ulrich, C., ... & Maier-Hein, K. (2025).
+LesionLocator: Zero-Shot Universal Tumor Segmentation and Tracking in 3D Whole-Body Imaging. CVPR.
+#######################################################################
+
+Tracking lesions (this may be time consuming for large images)...
+Loading fold 0
+Loading fold 1
+Loading fold 2
+Loading fold 3
+Loading fold 4
+
+ === Predicting 9dfcd5e558_FU_img_00.nii.gz === 
+Predicting Lesions with indices: [1 2 3 5 7 8 9]
+  0%|          | 0/7 [00:00<?, ?it/s] 14%|█▍        | 1/7 [00:18<01:52, 18.73s/it] 29%|██▊       | 2/7 [00:37<01:33, 18.62s/it] 43%|████▎     | 3/7 [00:55<01:14, 18.55s/it] 57%|█████▋    | 4/7 [01:14<00:55, 18.51s/it] 71%|███████▏  | 5/7 [01:32<00:36, 18.46s/it] 86%|████████▌ | 6/7 [01:51<00:18, 18.48s/it]100%|██████████| 7/7 [02:09<00:00, 18.45s/it]100%|██████████| 7/7 [02:09<00:00, 18.49s/it]
+--- baseline img_01 -> follow-up img_00
+
+#######################################################################
+Please cite the following paper when using LesionLocator:
+Rokuss, M., Kirchhoff, Y., Akbal, S., Kovacs, B., Roy, S., Ulrich, C., ... & Maier-Hein, K. (2025).
+LesionLocator: Zero-Shot Universal Tumor Segmentation and Tracking in 3D Whole-Body Imaging. CVPR.
+#######################################################################
+
+Tracking lesions (this may be time consuming for large images)...
+Loading fold 0
+Loading fold 1
+Loading fold 2
+Loading fold 3
+Loading fold 4
+
+ === Predicting 9dfcd5e558_FU_img_00.nii.gz === 
+Predicting Lesions with indices: [4 6]
+  0%|          | 0/2 [00:00<?, ?it/s] 50%|█████     | 1/2 [00:18<00:18, 18.77s/it]100%|██████████| 2/2 [00:37<00:00, 18.58s/it]100%|██████████| 2/2 [00:37<00:00, 18.61s/it]
+Finished 9dfcd5e558 at Thu Nov 12 02:12:09 EET 2026

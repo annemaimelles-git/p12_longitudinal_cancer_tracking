@@ -1,0 +1,21 @@
+Task 46: patient bcbe3365e6, started Thu Nov 12 02:23:14 EET 2026 on pegasus
+Scan pairs (baseline:follow-up): 00:00
+--- baseline img_00 -> follow-up img_00
+
+#######################################################################
+Please cite the following paper when using LesionLocator:
+Rokuss, M., Kirchhoff, Y., Akbal, S., Kovacs, B., Roy, S., Ulrich, C., ... & Maier-Hein, K. (2025).
+LesionLocator: Zero-Shot Universal Tumor Segmentation and Tracking in 3D Whole-Body Imaging. CVPR.
+#######################################################################
+
+Tracking lesions (this may be time consuming for large images)...
+Loading fold 0
+Loading fold 1
+Loading fold 2
+Loading fold 3
+Loading fold 4
+
+ === Predicting bcbe3365e6_FU_img_00.nii.gz === 
+Predicting Lesions with indices: [1 2 3 4 5 6 7]
+  0%|          | 0/7 [00:00<?, ?it/s] 14%|█▍        | 1/7 [00:45<04:34, 45.69s/it] 29%|██▊       | 2/7 [01:30<03:46, 45.36s/it] 43%|████▎     | 3/7 [02:15<03:01, 45.27s/it] 57%|█████▋    | 4/7 [03:01<02:15, 45.22s/it] 71%|███████▏  | 5/7 [03:46<01:30, 45.20s/it] 86%|████████▌ | 6/7 [04:31<00:45, 45.17s/it]100%|██████████| 7/7 [05:16<00:00, 45.16s/it]100%|██████████| 7/7 [05:16<00:00, 45.22s/it]
+Finished bcbe3365e6 at Thu Nov 12 02:30:08 EET 2026

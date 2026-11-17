@@ -1,0 +1,39 @@
+Task 54: patient e1eee5e2b4, started Thu Nov 12 02:50:56 EET 2026 on pegasus
+Scan pairs (baseline:follow-up): 00:00 01:01
+--- baseline img_00 -> follow-up img_00
+
+#######################################################################
+Please cite the following paper when using LesionLocator:
+Rokuss, M., Kirchhoff, Y., Akbal, S., Kovacs, B., Roy, S., Ulrich, C., ... & Maier-Hein, K. (2025).
+LesionLocator: Zero-Shot Universal Tumor Segmentation and Tracking in 3D Whole-Body Imaging. CVPR.
+#######################################################################
+
+Tracking lesions (this may be time consuming for large images)...
+Loading fold 0
+Loading fold 1
+Loading fold 2
+Loading fold 3
+Loading fold 4
+
+ === Predicting e1eee5e2b4_FU_img_00.nii.gz === 
+Predicting Lesions with indices: [1 2 3]
+  0%|          | 0/3 [00:00<?, ?it/s] 33%|███▎      | 1/3 [00:18<00:37, 18.53s/it] 67%|██████▋   | 2/3 [00:36<00:18, 18.32s/it]100%|██████████| 3/3 [00:54<00:00, 18.29s/it]100%|██████████| 3/3 [00:54<00:00, 18.32s/it]
+--- baseline img_01 -> follow-up img_01
+
+#######################################################################
+Please cite the following paper when using LesionLocator:
+Rokuss, M., Kirchhoff, Y., Akbal, S., Kovacs, B., Roy, S., Ulrich, C., ... & Maier-Hein, K. (2025).
+LesionLocator: Zero-Shot Universal Tumor Segmentation and Tracking in 3D Whole-Body Imaging. CVPR.
+#######################################################################
+
+Tracking lesions (this may be time consuming for large images)...
+Loading fold 0
+Loading fold 1
+Loading fold 2
+Loading fold 3
+Loading fold 4
+
+ === Predicting e1eee5e2b4_FU_img_01.nii.gz === 
+Predicting Lesions with indices: [4]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:19<00:00, 19.21s/it]100%|██████████| 1/1 [00:19<00:00, 19.21s/it]
+Finished e1eee5e2b4 at Thu Nov 12 02:53:00 EET 2026

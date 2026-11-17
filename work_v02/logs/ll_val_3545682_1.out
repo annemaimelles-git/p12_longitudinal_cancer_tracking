@@ -1,0 +1,21 @@
+Task 1: patient 1534b76d32, started Sat Nov  7 19:26:02 EET 2026 on pegasus
+Scan pairs (baseline:follow-up): 00:00
+--- baseline img_00 -> follow-up img_00
+
+#######################################################################
+Please cite the following paper when using LesionLocator:
+Rokuss, M., Kirchhoff, Y., Akbal, S., Kovacs, B., Roy, S., Ulrich, C., ... & Maier-Hein, K. (2025).
+LesionLocator: Zero-Shot Universal Tumor Segmentation and Tracking in 3D Whole-Body Imaging. CVPR.
+#######################################################################
+
+Tracking lesions (this may be time consuming for large images)...
+Loading fold 0
+Loading fold 1
+Loading fold 2
+Loading fold 3
+Loading fold 4
+
+ === Predicting 1534b76d32_FU_img_00.nii.gz === 
+Predicting Lesions with indices: [ 1  2  3  4  5  6  7  8  9 10 11 12 13 14]
+  0%|          | 0/14 [00:00<?, ?it/s]  7%|▋         | 1/14 [00:20<04:21, 20.13s/it] 14%|█▍        | 2/14 [00:39<03:54, 19.57s/it] 21%|██▏       | 3/14 [00:58<03:34, 19.46s/it] 29%|██▊       | 4/14 [01:17<03:13, 19.35s/it] 36%|███▌      | 5/14 [01:37<02:53, 19.31s/it] 43%|████▎     | 6/14 [01:56<02:34, 19.31s/it] 50%|█████     | 7/14 [02:15<02:14, 19.27s/it] 57%|█████▋    | 8/14 [02:34<01:55, 19.31s/it] 64%|██████▍   | 9/14 [02:54<01:36, 19.27s/it] 71%|███████▏  | 10/14 [03:13<01:17, 19.27s/it] 79%|███████▊  | 11/14 [03:32<00:57, 19.29s/it] 86%|████████▌ | 12/14 [03:51<00:38, 19.27s/it] 93%|█████████▎| 13/14 [04:11<00:19, 19.32s/it]100%|██████████| 14/14 [04:30<00:00, 19.27s/it]100%|██████████| 14/14 [04:30<00:00, 19.33s/it]
+Finished 1534b76d32 at Sat Nov  7 19:31:28 EET 2026

@@ -1,0 +1,19 @@
+Task 27: eda80a3d5b_lesion5, started Wed Nov 11 21:52:37 EET 2026
+
+#######################################################################
+Please cite the following paper when using LesionLocator:
+Rokuss, M., Kirchhoff, Y., Akbal, S., Kovacs, B., Roy, S., Ulrich, C., ... & Maier-Hein, K. (2025).
+LesionLocator: Zero-Shot Universal Tumor Segmentation and Tracking in 3D Whole-Body Imaging. CVPR.
+#######################################################################
+
+Tracking lesions (this may be time consuming for large images)...
+Loading fold 0
+Loading fold 1
+Loading fold 2
+Loading fold 3
+Loading fold 4
+
+ === Predicting eda80a3d5b_FU_img_00.nii.gz === 
+Predicting Lesions with indices: [5]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:16<00:00, 16.05s/it]100%|██████████| 1/1 [00:16<00:00, 16.05s/it]
+Finished eda80a3d5b_lesion5 at Wed Nov 11 21:53:13 EET 2026

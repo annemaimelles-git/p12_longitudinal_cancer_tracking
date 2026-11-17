@@ -1,0 +1,75 @@
+Task 17: patient 85d8ce590a, started Sat Nov  7 20:06:31 EET 2026 on pegasus
+Scan pairs (baseline:follow-up): 00:00 01:00 01:01 02:02
+--- baseline img_00 -> follow-up img_00
+
+#######################################################################
+Please cite the following paper when using LesionLocator:
+Rokuss, M., Kirchhoff, Y., Akbal, S., Kovacs, B., Roy, S., Ulrich, C., ... & Maier-Hein, K. (2025).
+LesionLocator: Zero-Shot Universal Tumor Segmentation and Tracking in 3D Whole-Body Imaging. CVPR.
+#######################################################################
+
+Tracking lesions (this may be time consuming for large images)...
+Loading fold 0
+Loading fold 1
+Loading fold 2
+Loading fold 3
+Loading fold 4
+
+ === Predicting 85d8ce590a_FU_img_00.nii.gz === 
+Predicting Lesions with indices: [ 2  4  5  7  9 10 11 12 13 14 15]
+  0%|          | 0/11 [00:00<?, ?it/s]  9%|▉         | 1/11 [00:17<02:53, 17.40s/it] 18%|█▊        | 2/11 [00:34<02:33, 17.05s/it] 27%|██▋       | 3/11 [00:50<02:14, 16.87s/it] 36%|███▋      | 4/11 [01:07<01:57, 16.81s/it] 45%|████▌     | 5/11 [01:24<01:40, 16.78s/it] 55%|█████▍    | 6/11 [01:40<01:23, 16.72s/it] 64%|██████▎   | 7/11 [01:57<01:06, 16.72s/it] 73%|███████▎  | 8/11 [02:14<00:50, 16.73s/it] 82%|████████▏ | 9/11 [02:31<00:33, 16.70s/it] 91%|█████████ | 10/11 [02:47<00:16, 16.71s/it]100%|██████████| 11/11 [03:04<00:00, 16.73s/it]100%|██████████| 11/11 [03:04<00:00, 16.78s/it]
+--- baseline img_01 -> follow-up img_00
+
+#######################################################################
+Please cite the following paper when using LesionLocator:
+Rokuss, M., Kirchhoff, Y., Akbal, S., Kovacs, B., Roy, S., Ulrich, C., ... & Maier-Hein, K. (2025).
+LesionLocator: Zero-Shot Universal Tumor Segmentation and Tracking in 3D Whole-Body Imaging. CVPR.
+#######################################################################
+
+Tracking lesions (this may be time consuming for large images)...
+Loading fold 0
+Loading fold 1
+Loading fold 2
+Loading fold 3
+Loading fold 4
+
+ === Predicting 85d8ce590a_FU_img_00.nii.gz === 
+Predicting Lesions with indices: [1 6 8]
+  0%|          | 0/3 [00:00<?, ?it/s] 33%|███▎      | 1/3 [00:17<00:34, 17.46s/it] 67%|██████▋   | 2/3 [00:34<00:17, 17.09s/it]100%|██████████| 3/3 [00:51<00:00, 16.99s/it]100%|██████████| 3/3 [00:51<00:00, 17.05s/it]
+--- baseline img_01 -> follow-up img_01
+
+#######################################################################
+Please cite the following paper when using LesionLocator:
+Rokuss, M., Kirchhoff, Y., Akbal, S., Kovacs, B., Roy, S., Ulrich, C., ... & Maier-Hein, K. (2025).
+LesionLocator: Zero-Shot Universal Tumor Segmentation and Tracking in 3D Whole-Body Imaging. CVPR.
+#######################################################################
+
+Tracking lesions (this may be time consuming for large images)...
+Loading fold 0
+Loading fold 1
+Loading fold 2
+Loading fold 3
+Loading fold 4
+
+ === Predicting 85d8ce590a_FU_img_01.nii.gz === 
+Predicting Lesions with indices: [1 6 8]
+  0%|          | 0/3 [00:00<?, ?it/s] 33%|███▎      | 1/3 [00:18<00:36, 18.46s/it] 67%|██████▋   | 2/3 [00:36<00:18, 18.22s/it]100%|██████████| 3/3 [00:54<00:00, 18.05s/it]100%|██████████| 3/3 [00:54<00:00, 18.12s/it]
+--- baseline img_02 -> follow-up img_02
+
+#######################################################################
+Please cite the following paper when using LesionLocator:
+Rokuss, M., Kirchhoff, Y., Akbal, S., Kovacs, B., Roy, S., Ulrich, C., ... & Maier-Hein, K. (2025).
+LesionLocator: Zero-Shot Universal Tumor Segmentation and Tracking in 3D Whole-Body Imaging. CVPR.
+#######################################################################
+
+Tracking lesions (this may be time consuming for large images)...
+Loading fold 0
+Loading fold 1
+Loading fold 2
+Loading fold 3
+Loading fold 4
+
+ === Predicting 85d8ce590a_FU_img_02.nii.gz === 
+Predicting Lesions with indices: [3]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:15<00:00, 15.41s/it]100%|██████████| 1/1 [00:15<00:00, 15.41s/it]
+Finished 85d8ce590a at Sat Nov  7 20:14:49 EET 2026

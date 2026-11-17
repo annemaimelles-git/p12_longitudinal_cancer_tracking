@@ -1,0 +1,21 @@
+Task 27: patient eda80a3d5b, started Sat Nov  7 20:26:13 EET 2026 on pegasus
+Scan pairs (baseline:follow-up): 00:00
+--- baseline img_00 -> follow-up img_00
+
+#######################################################################
+Please cite the following paper when using LesionLocator:
+Rokuss, M., Kirchhoff, Y., Akbal, S., Kovacs, B., Roy, S., Ulrich, C., ... & Maier-Hein, K. (2025).
+LesionLocator: Zero-Shot Universal Tumor Segmentation and Tracking in 3D Whole-Body Imaging. CVPR.
+#######################################################################
+
+Tracking lesions (this may be time consuming for large images)...
+Loading fold 0
+Loading fold 1
+Loading fold 2
+Loading fold 3
+Loading fold 4
+
+ === Predicting eda80a3d5b_FU_img_00.nii.gz === 
+Predicting Lesions with indices: [1 2 3 4 5 6 7]
+  0%|          | 0/7 [00:00<?, ?it/s] 14%|█▍        | 1/7 [00:32<03:16, 32.83s/it] 29%|██▊       | 2/7 [01:05<02:42, 32.45s/it] 43%|████▎     | 3/7 [01:37<02:09, 32.35s/it] 57%|█████▋    | 4/7 [02:09<01:36, 32.27s/it] 71%|███████▏  | 5/7 [02:41<01:04, 32.23s/it] 86%|████████▌ | 6/7 [03:13<00:32, 32.18s/it]100%|██████████| 7/7 [03:45<00:00, 32.18s/it]100%|██████████| 7/7 [03:45<00:00, 32.26s/it]
+Finished eda80a3d5b at Sat Nov  7 20:31:34 EET 2026

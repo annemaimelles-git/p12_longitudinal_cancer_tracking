@@ -1,0 +1,21 @@
+Task 13: patient 49182f81e6, started Wed Nov 11 23:56:05 EET 2026 on pegasus
+Scan pairs (baseline:follow-up): 00:00
+--- baseline img_00 -> follow-up img_00
+
+#######################################################################
+Please cite the following paper when using LesionLocator:
+Rokuss, M., Kirchhoff, Y., Akbal, S., Kovacs, B., Roy, S., Ulrich, C., ... & Maier-Hein, K. (2025).
+LesionLocator: Zero-Shot Universal Tumor Segmentation and Tracking in 3D Whole-Body Imaging. CVPR.
+#######################################################################
+
+Tracking lesions (this may be time consuming for large images)...
+Loading fold 0
+Loading fold 1
+Loading fold 2
+Loading fold 3
+Loading fold 4
+
+ === Predicting 49182f81e6_FU_img_00.nii.gz === 
+Predicting Lesions with indices: [1 2 3 4]
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:19<00:59, 19.72s/it] 50%|█████     | 2/4 [00:38<00:38, 19.36s/it] 75%|███████▌  | 3/4 [00:58<00:19, 19.30s/it]100%|██████████| 4/4 [01:17<00:00, 19.21s/it]100%|██████████| 4/4 [01:17<00:00, 19.28s/it]
+Finished 49182f81e6 at Wed Nov 11 23:57:55 EET 2026

@@ -1,0 +1,21 @@
+Task 51: patient d6baf65e0b, started Thu Nov 12 02:40:15 EET 2026 on pegasus
+Scan pairs (baseline:follow-up): 00:00
+--- baseline img_00 -> follow-up img_00
+
+#######################################################################
+Please cite the following paper when using LesionLocator:
+Rokuss, M., Kirchhoff, Y., Akbal, S., Kovacs, B., Roy, S., Ulrich, C., ... & Maier-Hein, K. (2025).
+LesionLocator: Zero-Shot Universal Tumor Segmentation and Tracking in 3D Whole-Body Imaging. CVPR.
+#######################################################################
+
+Tracking lesions (this may be time consuming for large images)...
+Loading fold 0
+Loading fold 1
+Loading fold 2
+Loading fold 3
+Loading fold 4
+
+ === Predicting d6baf65e0b_FU_img_00.nii.gz === 
+Predicting Lesions with indices: [ 1  2  3  4  5  6  7  8  9 10 11 12 13 14 15]
+  0%|          | 0/15 [00:00<?, ?it/s]  7%|▋         | 1/15 [00:20<04:40, 20.02s/it] 13%|█▎        | 2/15 [00:39<04:16, 19.70s/it] 20%|██        | 3/15 [00:58<03:54, 19.54s/it] 27%|██▋       | 4/15 [01:18<03:34, 19.51s/it] 33%|███▎      | 5/15 [01:37<03:14, 19.43s/it] 40%|████      | 6/15 [01:56<02:54, 19.40s/it] 47%|████▋     | 7/15 [02:16<02:35, 19.42s/it] 53%|█████▎    | 8/15 [02:35<02:15, 19.39s/it] 60%|██████    | 9/15 [02:55<01:56, 19.41s/it] 67%|██████▋   | 10/15 [03:14<01:36, 19.39s/it] 73%|███████▎  | 11/15 [03:33<01:17, 19.38s/it] 80%|████████  | 12/15 [03:53<00:58, 19.41s/it] 87%|████████▋ | 13/15 [04:12<00:38, 19.39s/it] 93%|█████████▎| 14/15 [04:32<00:19, 19.41s/it]100%|██████████| 15/15 [04:51<00:00, 19.40s/it]100%|██████████| 15/15 [04:51<00:00, 19.44s/it]
+Finished d6baf65e0b at Thu Nov 12 02:45:55 EET 2026

@@ -1,0 +1,17 @@
+Starting at Sat Nov  7 18:59:02 EET 2026 on pegasus
+name, memory.total [MiB]
+NVIDIA A100-PCIE-40GB, 40960 MiB
+
+#######################################################################
+Please cite the following paper when using LesionLocator:
+Rokuss, M., Kirchhoff, Y., Akbal, S., Kovacs, B., Roy, S., Ulrich, C., ... & Maier-Hein, K. (2025).
+LesionLocator: Zero-Shot Universal Tumor Segmentation and Tracking in 3D Whole-Body Imaging. CVPR.
+#######################################################################
+
+Tracking lesions (this may be time consuming for large images)...
+Loading fold 0
+
+ === Predicting 5f93f98352_FU_img_00.nii.gz === 
+Predicting Lesions with indices: [1 2 3 4]
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:13<00:40, 13.65s/it] 50%|█████     | 2/4 [00:21<00:20, 10.31s/it] 75%|███████▌  | 3/4 [00:29<00:09,  9.25s/it]100%|██████████| 4/4 [00:37<00:00,  8.76s/it]100%|██████████| 4/4 [00:37<00:00,  9.41s/it]
+Finished at Sat Nov  7 19:01:13 EET 2026
