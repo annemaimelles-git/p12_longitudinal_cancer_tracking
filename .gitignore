@@ -1,0 +1,8 @@
+*.pth
+*.pt
+*.nii.gz
+*.zip
+results/
+logs/
+checkpoints/
+__pycache__/
